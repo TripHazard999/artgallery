@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Switch, Link, Route} from "react-router-dom";
 import Artists from "./Components/Artists/Artists";
 import ArtistsInfo from "./Components/ArtistsInfo/ArtistInfo";
 import Gallery from "./Components/Gallery/Gallery";
-import Home from "./Components/Home/Home";
 import Login from "./Components/Login/Login";
 import PaintingStyles from "./Components/PaintingStyles/PaintingStyles";
 import PaintingStylesInfo from "./Components/PaintingStylesInfo/PaintingStylesInfo";
@@ -12,10 +11,10 @@ export default function App() {
   return (
     <Router>
       <ul className="navmenu" >
-        <Link to="/">Home</Link>
+        <Link to="/">Gallery</Link>
         <Link to="/artists">Artists</Link>
         <Link to="/paintingstyles">Painting Styles</Link>
-        <Link to="/gallery">Gallery</Link>
+        
         <Link to="/login">Login</Link>
       </ul>
 
@@ -32,14 +31,12 @@ export default function App() {
       <Route exact path="/paintingstyles/:styleId">
         <PaintingStylesInfo />
       </Route>
-      <Route path="/gallery">
-        <Gallery />
-      </Route>
+      
       <Route path="/login">
         <Login />
       </Route>
       <Route path="/">
-        <Home />
+        <Gallery />
       </Route>
     </Switch>
 
