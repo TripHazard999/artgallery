@@ -1,0 +1,11 @@
+.header-wrapper {
+    background-color: yellow;
+    .header-nav {
+        padding: 15px;
+        .header-nav-item {
+            margin-right: 20px;
+            text-decoration: none;
+            font-size: 22px;
+        }
+    }
+}

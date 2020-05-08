@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import ArtistsArr from "../DataFiles/ArtistsData";
+import ArtistsArr from "../../helper/ArtistsData";
 
 export default function Artists() {
     return (
